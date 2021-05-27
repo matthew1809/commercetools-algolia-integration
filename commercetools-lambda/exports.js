@@ -4,11 +4,11 @@ const alg = require('./algolia')
 // Main event trigger
 // Should ideally just be a logic chain and error handling
 exports.update = async (event) => {
-  console.log(event)
+  console.log(JSON.stringify(event))
   const algoliasearch = require('algoliasearch')
-  const algoliaApp = 'ZW1HH57FVV'
-  const client = algoliasearch(algoliaApp, process.env.lambda_algolia_api_key)
-  const index = client.initIndex('products')
+  const algoliaApp = process.env.ALGOLIA_APP_ID
+  const client = algoliasearch(algoliaApp, process.env.ALGOLIA_API_KEY)
+  const index = client.initIndex(process.env.ALGOLIA_INDEX_NAME)
 
   if (event.Records !== undefined) {
     // Will there ever be multiple records? This only takes the first
