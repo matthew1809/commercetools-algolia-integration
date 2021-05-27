@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@commercetools/api-request-builder": "^5.6.1",
+    "@commercetools/sdk-client": "^2.1.2",
+    "@commercetools/sdk-middleware-auth": "^6.1.4",
+    "@commercetools/sdk-middleware-http": "^6.0.7",
+    "@commercetools/sdk-middleware-logger": "^2.1.1",
+    "algoliasearch": "^4.2.0",
+    "dotenv": "^8.2.0",
+    "lambda-local": "^1.7.3",
+    "node-fetch": "^2.6.0"
+  },
+  "scripts": {
+    "locally": "node -e \"console.log(require('./exports').update({}));\""
+  }
+}
