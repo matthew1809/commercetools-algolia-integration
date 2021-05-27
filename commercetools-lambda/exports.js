@@ -1,23 +1,17 @@
 const ctools = require('./commercetools.js')
-<<<<<<< Updated upstream
-
-=======
 const alg = require('./algolia')
 
 // Main event trigger
 // Should ideally just be a logic chain and error handling
->>>>>>> Stashed changes
 exports.update = async (event) => {
+  console.log(event)
   const algoliasearch = require('algoliasearch')
   const algoliaApp = 'ZW1HH57FVV'
   const client = algoliasearch(algoliaApp, process.env.lambda_algolia_api_key)
   const index = client.initIndex('products')
 
   if (event.Records !== undefined) {
-<<<<<<< Updated upstream
-=======
     // Will there ever be multiple records? This only takes the first
->>>>>>> Stashed changes
     let message = JSON.parse(event.Records[0].Sns.Message)
 
     let ID = message.resource.id
