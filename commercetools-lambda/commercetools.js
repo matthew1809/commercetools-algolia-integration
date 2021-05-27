@@ -10,38 +10,22 @@ const createAuthMiddlewareForClientCredentialsFlow =
 const createLoggerMiddleware =
   require('@commercetools/sdk-middleware-logger').createLoggerMiddleware
 
-<<<<<<< Updated upstream
-const createHttpMiddleware = require('@commercetools/sdk-middleware-http')
-  .createHttpMiddleware
-const createRequestBuilder = require('@commercetools/api-request-builder')
-  .createRequestBuilder
-=======
 const createHttpMiddleware =
   require('@commercetools/sdk-middleware-http').createHttpMiddleware
 
 const createRequestBuilder =
   require('@commercetools/api-request-builder').createRequestBuilder
->>>>>>> Stashed changes
 
 const client = createClient({
   middlewares: [
     createAuthMiddlewareForClientCredentialsFlow({
-<<<<<<< Updated upstream
-      host: 'https://auth.europe-west1.gcp.commercetools.com',
-      projectKey: 'algolia-starter',
-=======
       host: process.env.COMMERCETOOLS_AUTH_HOST_URL,
       projectKey: process.env.COMMERCETOOLS_PROJECT_KEY,
->>>>>>> Stashed changes
       credentials: {
         clientId: process.env.COMMERCETOOLS_CLIENT_ID,
         clientSecret: process.env.COMMERCETOOLS_CLIENT_SECRET,
       },
-<<<<<<< Updated upstream
-      scopes: [`manage_project:algolia-starter`],
-=======
       scopes: [`manage_project:${process.env.COMMERCETOOLS_PROJECT_KEY}`],
->>>>>>> Stashed changes
       fetch,
     }),
     createHttpMiddleware({
