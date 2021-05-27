@@ -1,0 +1,22 @@
+{
+    "Records": [
+        {
+            "EventSource": "aws:sns",
+            "EventVersion": "1.0",
+            "EventSubscriptionArn": "arn:aws:sns:us-east-1:462404742183:commercetools-product-updates:41536a8d-3163-48f1-8996-52b9ca54c967",
+            "Sns": {
+                "Type": "Notification",
+                "MessageId": "4a6d87ba-9b5a-5189-a469-de930d7bb757",
+                "TopicArn": "arn:aws:sns:us-east-1:462404742183:commercetools-product-updates",
+                "Subject": null,
+                "Message": "{\"notificationType\":\"ResourceUpdated\",\"projectKey\":\"algolia-integration\",\"resource\":{\"typeId\":\"product\",\"id\":\"78bb0d0a-480d-4176-a8b2-d9e0db430bd6\"},\"resourceUserProvidedIdentifiers\":{\"key\":\"test\",\"slug\":{\"en-US\":\"test\"}},\"version\":5,\"oldVersion\":4,\"modifiedAt\":\"2021-05-27T12:43:13.038Z\"}",
+                "Timestamp": "2021-05-27T12:43:13.299Z",
+                "SignatureVersion": "1",
+                "Signature": "Og4kPJbNhoVzhRoyTxXyV6rzjum9bJjnxWKnsyf+q/hw1NZfpl24IWBY4a/u7enTYi6x0AFtPQu3MObKg0lubO6py9TQ7WJs5mj2dPI6cEpSLbh2R9+DgyGf5dvZAsvgHdd0ckeyAtnrnw4A7HU1P8P21wrjDrw6mVNgLsp1NNyrdUWHLIMzkT5epF6KrLh35xo+6XNsdsc8Ma0CeBM3yjr5vm22QNJ/3myFrlx3QmVWyrrj22tMETFNUwNOLg3NHB/t8baNFcVVEOJ3S0dzFTds1mknt0B+38CJo7ISD93hCtb0OFAUZCgusX4dlCyj8x/C9pneVsJyvNiUoMhgCg==",
+                "SigningCertUrl": "https://sns.us-east-1.amazonaws.com/SimpleNotificationService-010a507c1833636cd94bdb98bd93083a.pem",
+                "UnsubscribeUrl": "https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1:462404742183:commercetools-product-updates:41536a8d-3163-48f1-8996-52b9ca54c967",
+                "MessageAttributes": {}
+            }
+        }
+    ]
+}

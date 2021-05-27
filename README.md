@@ -30,3 +30,10 @@ The terraform script does three things:
 3. Run `terraform init`, then `terraform plan` to ensure the configuration is set up successfully, you will receive a view of everything that will be created.
 
 4. Run `terraform apply` to create all of the needed infrastructure on commercetools and AWS.
+
+### Testing the lambda event
+You can test the lambda event locally using SAM in order to adjust the function to your specific needs. There is a sample event in the root of `commercetools-lambda`
+
+1. Make sure [sam is installed locally](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)
+
+2. In the `commercetools-lambda` directory, run `sam local invoke -e example-event.json CommercetoolsLambda`
